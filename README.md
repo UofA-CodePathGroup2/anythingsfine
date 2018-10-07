@@ -1,8 +1,8 @@
-# Group Project - Anything is Fine
+# Group Project - Anything's Fine
 
-Anything is Fine is a recommendation and social media app for food.  People often do not know what to eat, so they can use this app to
+Anything's Fine is a recommendation and social media app for food.  People often do not know what to eat, so they can use this app to
 get a recipe, restaurant, snack, or food recommendation.  They can also view the social media page of the app to see what their friends are eating.
-Everyone has to eat so there is sure to be plenty of opportunity to use Anything is Fine.  Creativity can be expressed as users can share their
+Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their
 favorite recipes and take fun photos of their food creations.
 
 Time spent: **X** hours spent in total
@@ -16,24 +16,31 @@ The following **required** functionality is completed:
 - [ ] The current signed in user is persisted across app restarts
 - [ ] User can request a recipe recommendation
 - [ ] User can request a restaurant recommendation based upon location
-- [ ] User can request a snack recommendation
 - [ ] User can request a food recommendation
+- [ ] User can pick from specific categories for each recommendation
 - [ ] User can access the social media page of the app
 - [ ] User can send friend requests to other app users
 - [ ] User can accept/decline friend requests from other users
 - [ ] User can take photos while staying in the application
 - [ ] User can access photo library to access existing photos on user's phone
-- [ ] User can post an "Anything is Fine" post which has a photo and caption
+- [ ] User can post an "Anything's Fine" post which has a photo and caption
 - [ ] User can see table view arrangement of posts from all friends and self with most recent posts on top
 - [ ] User can post comments on posts
 - [ ] User can view other users' profiles
 
 The following **stretch** features are implemented:
+- [ ] User can request a snack recommendation
 - [ ] Users can rate/review every restaurant
 - [ ] User can get directions to restaurants
 - [ ] User can navigate to restaurant website from app
 - [ ] User can make individual reservations from app
 - [ ] User can group together with other users to decide on a recommendation
+- [ ] User can save/access suggestion history
+- [ ] User can create favorite items list
+- [ ] User can like posts
+- [ ] User can see trending items
+- [ ] User can add allergy filters 
+- [ ] User can see additional information such as calories
 
 The following **additional** features are implemented:
 
