@@ -26,8 +26,14 @@ The following **required** functionality is completed:
 - [ ] User can post an "Anything is Fine" post which has a photo and caption
 - [ ] User can see table view arrangement of posts from all friends and self with most recent posts on top
 - [ ] User can post comments on posts
+- [ ] User can view other users' profiles
 
 The following **stretch** features are implemented:
+- [ ] Users can rate/review every restaurant
+- [ ] User can get directions to restaurants
+- [ ] User can navigate to restaurant website from app
+- [ ] User can make individual reservations from app
+- [ ] User can group together with other users to decide on a recommendation
 
 The following **additional** features are implemented:
 
