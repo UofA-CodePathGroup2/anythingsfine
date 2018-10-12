@@ -19,16 +19,15 @@ The following **required** functionality is completed:
 - [ ] User can request a food recommendation
 - [ ] User can pick from specific categories for each recommendation
 - [ ] User can access the social media page of the app
-- [ ] User can send friend requests to other app users
-- [ ] User can accept/decline friend requests from other users
 - [ ] User can take photos while staying in the application
 - [ ] User can access photo library to access existing photos on user's phone
 - [ ] User can post an "Anything's Fine" post which has a photo and caption
 - [ ] User can see table view arrangement of posts from all friends and self with most recent posts on top
+- [ ] User can like posts
 - [ ] User can post comments on posts
-- [ ] User can view other users' profiles
 
 The following **stretch** features are implemented:
+- [ ] User can view other users' profiles
 - [ ] User can request a snack recommendation
 - [ ] Users can rate/review every restaurant
 - [ ] User can get directions to restaurants
@@ -37,7 +36,8 @@ The following **stretch** features are implemented:
 - [ ] User can group together with other users to decide on a recommendation
 - [ ] User can save/access suggestion history
 - [ ] User can create favorite items list
-- [ ] User can like posts
+- [ ] User can send friend requests to other app users
+- [ ] User can accept/decline friend requests from other users
 - [ ] User can see trending items
 - [ ] User can add allergy filters 
 - [ ] User can see additional information such as calories
