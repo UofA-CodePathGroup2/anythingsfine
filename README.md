@@ -16,7 +16,6 @@ The following **required** functionality is completed:
 - [ ] The current signed in user is persisted across app restarts
 - [ ] User can request a recipe recommendation
 - [ ] User can request a restaurant recommendation based upon location
-- [ ] User can request a food recommendation
 - [ ] User can pick from specific categories for each recommendation
 - [ ] User can access the social media page of the app
 - [ ] User can take photos while staying in the application
