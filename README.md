@@ -40,6 +40,8 @@ The following **stretch** features are implemented:
 - [ ] User can see trending items
 - [ ] User can add allergy filters 
 - [ ] User can see additional information such as calories
+- [ ] Link restaurants to post
+
 
 The following **additional** features are implemented:
 
