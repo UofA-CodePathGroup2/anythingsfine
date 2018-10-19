@@ -50,6 +50,23 @@ Please list two areas of the assignment you'd like to **discuss further with you
 1.
 2.
 
+## Parse Components
+Profiles:
+Username
+Password
+Full name
+Location
+Friends*
+
+Post Feed:
+Image
+Restaurant
+Location
+Caption
+Likes
+Comments
+
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
