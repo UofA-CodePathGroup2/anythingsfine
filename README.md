@@ -76,6 +76,9 @@ Search API: To retrieve restuarants in the area, we're going to need to use a ea
 Parse: 
 
 
+## Model Classes
+
+
 
 ## Video Walkthrough
 
