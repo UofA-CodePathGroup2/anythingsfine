@@ -67,6 +67,16 @@ Likes
 Comments
 
 
+## APIs
+Recipie API: Since we want this app to fetch random recipies, we need an API to retrieve said recipies.
+For this, we are thinking of using either the [Food API at Spoonacular](https://spoonacular.com/food-api) or the [Edamam API](https://developer.edamam.com/)
+
+Search API: To retrieve restuarants in the area, we're going to need to use a eating location search tool. The most well known API is the [Yelp API](https://www.yelp.com/developers), so we've elected to use that.
+
+Parse: 
+
+
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
