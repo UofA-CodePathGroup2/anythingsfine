@@ -101,13 +101,11 @@ Parse: WIll be backbone to social media aspect of this project. Will hold the po
 - Meal instructions
 
 
-## Video Walkthrough
+## Wireframe
 
-Here's a walkthrough of implemented user stories:
+Here's a wireframe rendering of planned user stories:
 
 <img src='https://imgur.com/SVZ1VPG.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Credits
 
