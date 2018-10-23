@@ -62,43 +62,43 @@ Parse: WIll be backbone to social media aspect of this project. Will hold the po
 
 ### Profiles
 
--Username
--Password
--Full name
--Location
--Friends (Optional)
+- Username
+- Password
+- Full name
+- Location
+- Friends (Optional)
 
 ### Post Feed
--Image
--Restaurant
--Location
--Caption
--Likes
--Comments
+- Image
+- Restaurant
+- Location
+- Caption
+- Likes
+- Comments
 
 
 ## Model Classes
 
 ### Profile
--Username
--Hashed password
+- Username
+- Hashed password
 
 ### Posts
--Food Image
--Restaurant
--Location
--Caption
--Likes
--Comments
+- Food Image
+- Restaurant
+- Location
+- Caption
+- Likes
+- Comments
 
 ### Recipie
--Meal time (Breakfast, lunch, dinner)
--Meal type (eat out, eat in)
--Meal name
--Meal tags
--Meal summary
--Meal ingredients
--Meal instructions
+- Meal time (Breakfast, lunch, dinner)
+- Meal type (eat out, eat in)
+- Meal name
+- Meal tags
+- Meal summary
+- Meal ingredients
+- Meal instructions
 
 
 ## Video Walkthrough
