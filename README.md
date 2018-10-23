@@ -91,6 +91,15 @@ Parse: WIll be backbone to social media aspect of this project. Will hold the po
 -Likes
 -Comments
 
+### Recipie
+-Meal time (Breakfast, lunch, dinner)
+-Meal type (eat out, eat in)
+-Meal name
+-Meal tags
+-Meal summary
+-Meal ingredients
+-Meal instructions
+
 
 ## Video Walkthrough
 
