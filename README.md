@@ -5,7 +5,7 @@ get a recipe, restaurant, snack, or food recommendation.  They can also view the
 Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their
 favorite recipes and take fun photos of their food creations.
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
@@ -60,25 +60,36 @@ Parse: WIll be backbone to social media aspect of this project. Will hold the po
 
 ## Parse Components
 
-Profiles: 
-Username
-Password
-Full name
-Location
-Friends*
+### Profiles
 
+-Username
+-Password
+-Full name
+-Location
+-Friends (Optional)
 
-Post Feed:
-Image
-Restaurant
-Location
-Caption
-Likes
-Comments
+### Post Feed
+-Image
+-Restaurant
+-Location
+-Caption
+-Likes
+-Comments
 
 
 ## Model Classes
 
+### Profile
+-Username
+-Hashed password
+
+### Posts
+-Food Image
+-Restaurant
+-Location
+-Caption
+-Likes
+-Comments
 
 
 ## Video Walkthrough
@@ -102,7 +113,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2018 Bohlman Ho Quevedo
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
