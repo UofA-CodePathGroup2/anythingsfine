@@ -45,26 +45,8 @@ The following **stretch** features are implemented:
 
 The following **additional** features are implemented:
 
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
 
-## Parse Components
-Profiles:
-Username
-Password
-Full name
-Location
-Friends*
-
-Post Feed:
-Image
-Restaurant
-Location
-Caption
-Likes
-Comments
 
 
 ## APIs
@@ -73,7 +55,26 @@ For this, we are thinking of using either the [Food API at Spoonacular](https://
 
 Search API: To retrieve restuarants in the area, we're going to need to use a eating location search tool. The most well known API is the [Yelp API](https://www.yelp.com/developers), so we've elected to use that.
 
-Parse: 
+Parse: WIll be backbone to social media aspect of this project. Will hold the post component as well as the account profile components.
+
+
+## Parse Components
+
+Profiles: 
+Username
+Password
+Full name
+Location
+Friends*
+
+
+Post Feed:
+Image
+Restaurant
+Location
+Caption
+Likes
+Comments
 
 
 ## Model Classes
