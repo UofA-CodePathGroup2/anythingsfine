@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: UIViewController {
 
@@ -19,5 +20,13 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onLogOut(_ sender: Any) {
+        PFUser.logOutInBackground { (error: Error?) in
+            NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
+            
+        }
+    }
 
+    
+    
 }

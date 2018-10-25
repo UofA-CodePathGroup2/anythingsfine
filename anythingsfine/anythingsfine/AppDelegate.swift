@@ -17,10 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Parse.initialize(with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) in
-            configuration.applicationId = "AnythingIsFine"
-            configuration.clientKey = "gfxre3q23s45r56tg78uj9in9ubuyft6cc"
-            configuration.server = "http://boiling-island-19714.herokuapp.com/parse"
+            configuration.applicationId = "AnythingsFine"
+            configuration.clientKey = "efaawefwef23r3wefwaefsad"
+            configuration.server = "https://anythingsfine.herokuapp.com/parse"
         }))
+        
         // check if user is logged in.
         if PFUser.current() != nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="anythingsfine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="anythingsfine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEz-9J-ido"/>
-                                    <segue destination="wsk-Jn-Uec" kind="presentation" identifier="loginSegue" id="o0Q-sx-lBp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,16 +62,17 @@
                     <connections>
                         <outlet property="passwordField" destination="SbN-oH-b0B" id="hgv-S1-yMy"/>
                         <outlet property="usernameField" destination="957-8K-3vX" id="fBz-o0-VHB"/>
+                        <segue destination="wsk-Jn-Uec" kind="presentation" identifier="loginSegue" id="V8k-NV-Rx1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--SignUpViewController-->
         <scene sceneID="9Y1-8A-9rD">
             <objects>
-                <viewController id="8FH-4A-ffd" customClass="SignUpViewController" customModule="anythingsfine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" title="SignUpViewController" id="8FH-4A-ffd" customClass="SignUpViewController" customModule="anythingsfine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TkK-JK-BRd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +121,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignUp:" destination="8FH-4A-ffd" eventType="touchUpInside" id="v9B-pl-UBA"/>
-                                    <segue destination="wsk-Jn-Uec" kind="presentation" identifier="signedInSegue" id="nQf-Yn-mJV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,16 +131,17 @@
                         <outlet property="fullnameField" destination="3oa-Ls-5lz" id="mxU-hY-bGf"/>
                         <outlet property="passwordField" destination="eOW-ik-zrM" id="T5O-N5-sha"/>
                         <outlet property="usernameField" destination="PMW-jd-jLe" id="wTi-TJ-wBn"/>
+                        <segue destination="wsk-Jn-Uec" kind="presentation" identifier="signedInSegue" id="vES-gD-4Vr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rvD-Mm-5dY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="854.1229385307347"/>
         </scene>
-        <!--Home View Controller-->
+        <!--HomeViewController-->
         <scene sceneID="8dD-pN-Ohy">
             <objects>
-                <viewController id="wsk-Jn-Uec" customClass="HomeViewController" customModule="anythingsfine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" id="wsk-Jn-Uec" customClass="HomeViewController" customModule="anythingsfine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cpY-pf-j7A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,6 +150,9 @@
                                 <rect key="frame" x="311" y="20" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LogOut"/>
+                                <connections>
+                                    <action selector="onLogOut:" destination="wsk-Jn-Uec" eventType="touchUpInside" id="Ys8-iJ-7e5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -162,6 +165,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nQf-Yn-mJV"/>
+        <segue reference="vES-gD-4Vr"/>
     </inferredMetricsTieBreakers>
 </document>
