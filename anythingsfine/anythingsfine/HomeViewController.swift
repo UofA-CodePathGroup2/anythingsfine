@@ -10,6 +10,7 @@ import Parse
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var recLabel: UILabel!
     var businesses: [Business]!
     var categoryList: [String] = ["Japanese","Thai","Chinese","Burgers","African","American","Fast Food","French","German","Italian","Mexican","Spanish"]
 
@@ -32,7 +33,9 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func onTapRequest(_ sender: Any) {
-        let searchTerm = categoryList[Int.random(in: 0..<categoryList.count)]
+        //let randNum = Int.random(in: 0..<categoryList.count)
+        let randNum = categoryList.count - 1
+        let searchTerm = categoryList[randNum]
         Business.searchWithTerm(term: searchTerm, completion: { (businesses: [Business]?, error: Error?) -> Void in
             
             //self.businesses = businesses
@@ -42,9 +45,12 @@ class HomeViewController: UIViewController {
                     print("Try again!")
                     return;
                 }
-                let business = businesses[Int.random(in: 0..<businesses.count)]
+                let randNum2 = businesses.count - 1
+                let business = businesses[randNum2]
                 print(business.name!)
                 print(business.address!)
+                self.recLabel.text = business.name! + "\n" + business.address!
+                
 //                for business in businesses {
 //                    print(business.name!)
 //                    print(business.address!)
