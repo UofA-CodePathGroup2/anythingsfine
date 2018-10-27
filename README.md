@@ -5,17 +5,17 @@ get a recipe, restaurant, snack, or food recommendation.  They can also view the
 Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their
 favorite recipes and take fun photos of their food creations.
 
-Time spent: **4** hours spent in total
+Time spent: **8** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] User can sign up to create a new account
-- [ ] User can log in and log out of his or her account
-- [ ] The current signed in user is persisted across app restarts
+- [x] User can sign up to create a new account
+- [x] User can log in and log out of his or her account
+- [x] The current signed in user is persisted across app restarts
 - [ ] User can request a recipe recommendation
-- [ ] User can request a restaurant recommendation based upon location
+- [x] User can request a restaurant recommendation based upon location
 - [ ] User can pick from specific categories for each recommendation
 - [ ] User can access the social media page of the app
 - [ ] User can take photos while staying in the application

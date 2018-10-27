@@ -9,6 +9,10 @@ import UIKit
 import Parse
 
 class HomeViewController: UIViewController {
+    
+    var businesses: [Business]!
+    var categoryList: [String] = ["Japanese","Thai","Chinese","Burgers","African","American","Fast Food","French","German","Italian","Mexican","Spanish"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,29 @@ class HomeViewController: UIViewController {
         }
     }
 
+    @IBAction func onTapRequest(_ sender: Any) {
+        let searchTerm = categoryList[Int.random(in: 0..<categoryList.count)]
+        Business.searchWithTerm(term: searchTerm, completion: { (businesses: [Business]?, error: Error?) -> Void in
+            
+            //self.businesses = businesses
+            //self.tableView.reloadData()
+            if let businesses = businesses {
+                if businesses.count == 0 {
+                    print("Try again!")
+                    return;
+                }
+                let business = businesses[Int.random(in: 0..<businesses.count)]
+                print(business.name!)
+                print(business.address!)
+//                for business in businesses {
+//                    print(business.name!)
+//                    print(business.address!)
+//                }
+            }
+            
+        }
+        )
+    }
     
     
 }
