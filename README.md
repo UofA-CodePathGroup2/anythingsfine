@@ -107,6 +107,16 @@ Here's a wireframe rendering of planned user stories:
 
 <img src='https://imgur.com/SVZ1VPG.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/RkiWC5I.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
