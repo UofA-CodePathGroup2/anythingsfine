@@ -5,7 +5,7 @@ get a recipe, restaurant, snack, or food recommendation.  They can also view the
 Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their
 favorite recipes and take fun photos of their food creations.
 
-Time spent: **8** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -18,9 +18,9 @@ The following **required** functionality is completed:
 - [x] User can request a restaurant recommendation based upon location
 - [ ] User can pick from specific categories for each recommendation
 - [ ] User can access the social media page of the app
-- [ ] User can take photos while staying in the application
-- [ ] User can access photo library to access existing photos on user's phone
-- [ ] User can post an "Anything's Fine" post which has a photo and caption
+- [x] User can take photos while staying in the application
+- [x] User can access photo library to access existing photos on user's phone
+- [x] User can post an "Anything's Fine" post which has a photo and caption
 - [ ] User can see table view arrangement of posts from all friends and self with most recent posts on top
 - [ ] User can like posts
 - [ ] User can post comments on posts
