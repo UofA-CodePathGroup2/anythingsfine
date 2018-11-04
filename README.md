@@ -14,14 +14,14 @@ The following **required** functionality is completed:
 - [x] User can sign up to create a new account
 - [x] User can log in and log out of his or her account
 - [x] The current signed in user is persisted across app restarts
-- [ ] User can request a recipe recommendation
+- [] User can request a recipe recommendation
 - [x] User can request a restaurant recommendation based upon location
 - [ ] User can pick from specific categories for each recommendation
 - [ ] User can access the social media page of the app
 - [x] User can take photos while staying in the application
 - [x] User can access photo library to access existing photos on user's phone
 - [x] User can post an "Anything's Fine" post which has a photo and caption
-- [ ] User can see table view arrangement of posts from all friends and self with most recent posts on top
+- [x] User can see table view arrangement of posts from all friends and self with most recent posts on top
 - [ ] User can like posts
 - [ ] User can post comments on posts
 
