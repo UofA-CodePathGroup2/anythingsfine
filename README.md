@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 - [x] User can sign up to create a new account
 - [x] User can log in and log out of his or her account
 - [x] The current signed in user is persisted across app restarts
-- [] User can request a recipe recommendation
+- [ ] User can request a recipe recommendation
 - [x] User can request a restaurant recommendation based upon location
 - [ ] User can pick from specific categories for each recommendation
 - [ ] User can access the social media page of the app
