@@ -38,7 +38,7 @@ class Post: PFObject, PFSubclassing {
         
         // Add relevant fields to the object
         post.media = getPFFileFromImage(image: image)! // PFFile column type
-        post.author = PFUser.current()! // Pointer column type that points to PFUser
+        //post.author = PFUser.current()! // Pointer column type that points to PFUser
         post.caption = caption!
         post.likesCount = 0
         post.commentsCount = 0

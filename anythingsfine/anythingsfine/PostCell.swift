@@ -6,9 +6,24 @@
 //
 
 import UIKit
+import Parse
+
 
 class PostCell: UITableViewCell {
 
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var postImageView: UIImageView!
+    @IBOutlet weak var captionLabel: UILabel!
+    
+    
+    var post: PFObject! {
+        didSet{
+            
+            self.captionLabel.text = post.object(forKey:"caption") as? String
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
