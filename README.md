@@ -21,7 +21,7 @@ The following **required** functionality is completed:
 - [x] User can take photos while staying in the application
 - [x] User can access photo library to access existing photos on user's phone
 - [x] User can post an "Anything's Fine" post which has a photo and caption
-- [ ] User can see table view arrangement of posts from all friends and self with most recent posts on top
+- [x] User can see table view arrangement of posts from all friends and self with most recent posts on top
 - [ ] User can like posts
 - [ ] User can post comments on posts
 
