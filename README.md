@@ -22,8 +22,8 @@ The following **required** functionality is completed:
 - [x] User can access photo library to access existing photos on user's phone
 - [x] User can post an "Anything's Fine" post which has a photo and caption
 - [x] User can see table view arrangement of posts from all friends and self with most recent posts on top
-- [ ] User can like posts
-- [ ] User can post comments on posts
+- [x] User can like posts
+- [x] User can post comments on posts
 
 The following **stretch** features are implemented:
 - [ ] User can view other users' profiles

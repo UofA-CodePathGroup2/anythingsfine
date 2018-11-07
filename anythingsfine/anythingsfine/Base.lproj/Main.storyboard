@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -257,6 +257,9 @@
                                 <state key="normal" title="Like">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTapLike:" destination="JsB-aD-BHy" eventType="touchUpInside" id="ydu-W1-tXK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO7-sY-LOE">
                                 <rect key="frame" x="199" y="310" width="160" height="30"/>
@@ -266,6 +269,9 @@
                                 <state key="normal" title="Comment">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTapComment:" destination="JsB-aD-BHy" eventType="touchUpInside" id="aPF-Wd-JHk"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ah-BW-SSp">
                                 <rect key="frame" x="16" y="348" width="343" height="30"/>
@@ -281,15 +287,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6ab-4y-kZp">
+                                <rect key="frame" x="1" y="386" width="374" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iBK-SM-g5b"/>
                     </view>
                     <connections>
                         <outlet property="captionLabel" destination="R5x-Ak-Pdf" id="EPG-nu-DMg"/>
+                        <outlet property="commentField" destination="7ah-BW-SSp" id="w71-e6-bUe"/>
                         <outlet property="commentsLabel" destination="cgZ-qf-Cbt" id="qsA-J1-Yo0"/>
+                        <outlet property="likeButton" destination="OaD-4p-MdA" id="2tk-OV-HJ9"/>
                         <outlet property="likesLabel" destination="dpz-nO-ZS0" id="3U0-na-tzw"/>
                         <outlet property="postImageView" destination="rpS-KJ-dVh" id="mAe-FR-w5T"/>
+                        <outlet property="tableView" destination="6ab-4y-kZp" id="f6H-Rb-jsm"/>
                         <outlet property="usernameLabel" destination="Y1w-sF-46J" id="MKL-Wm-upJ"/>
                     </connections>
                 </viewController>

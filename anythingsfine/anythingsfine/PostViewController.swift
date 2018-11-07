@@ -49,9 +49,29 @@ class PostViewController: UIViewController,  UIImagePickerControllerDelegate, UI
             return;
         }
         
+        var newSize = self.imageView.image?.size
+        
+        newSize!.width = (newSize?.width)!/1.5
+        newSize!.height = (newSize?.height)!/1.5
+        
+        self.imageView.image = resize(image: self.imageView.image!, newSize: newSize!)
+        
         Post.postUserImage(image: imageView.image!, withCaption: captionTextField.text, withCompletion: nil)
         
         performSegue(withIdentifier: "HomeSegue", sender: nil)
+    }
+    
+    func resize(image: UIImage, newSize: CGSize) -> UIImage {
+        //let resizeImageView = UIImageView(frame: CGRectMake(0, 0, newSize.width, newSize.height))
+        let resizeImageView = UIImageView(frame: CGRect(origin: .zero, size: CGSize(width: newSize.width, height: newSize.height)))
+        resizeImageView.contentMode = UIView.ContentMode.scaleAspectFill
+        resizeImageView.image = image
+        
+        UIGraphicsBeginImageContext(resizeImageView.frame.size)
+        resizeImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
     }
     
 }

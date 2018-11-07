@@ -15,6 +15,7 @@ class Post: PFObject, PFSubclassing {
     @NSManaged var caption: String
     @NSManaged var likesCount: Int
     @NSManaged var commentsCount: Int
+    @NSManaged var comments: [String]
     
     /* Needed to implement PFSubclassing interface */
     class func parseClassName() -> String {
