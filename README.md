@@ -17,7 +17,7 @@ The following **required** functionality is completed:
 - [ ] User can request a recipe recommendation
 - [x] User can request a restaurant recommendation based upon location
 - [ ] User can pick from specific categories for each recommendation
-- [ ] User can access the social media page of the app
+- [x] User can access the social media page of the app
 - [x] User can take photos while staying in the application
 - [x] User can access photo library to access existing photos on user's phone
 - [x] User can post an "Anything's Fine" post which has a photo and caption
@@ -111,6 +111,8 @@ Here's a wireframe rendering of planned user stories:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
+![anythingsfine](https://user-images.githubusercontent.com/31720526/48109889-7f67f280-e206-11e8-9568-be0b7a882ccc.gif)
 
 <img src='https://i.imgur.com/RkiWC5I.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
