@@ -15,6 +15,7 @@
 		3D217C4C21811D98004C30E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D217C4B21811D98004C30E2 /* LoginViewController.swift */; };
 		3D217C4E218250EA004C30E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D217C4D218250EA004C30E2 /* HomeViewController.swift */; };
 		3D217C50218251B4004C30E2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D217C4F218251B3004C30E2 /* SignUpViewController.swift */; };
+		3D99B31921928B6600A49280 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B31821928B6600A49280 /* DetailViewController.swift */; };
 		3DA6C6EB218E2BAF000792AE /* SocialFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6C6EA218E2BAF000792AE /* SocialFeedViewController.swift */; };
 		3DA6C6EF218E32C5000792AE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6C6EE218E32C5000792AE /* PostCell.swift */; };
 		64B339A72184F987001044F2 /* BrunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B339A62184F987001044F2 /* BrunchViewController.swift */; };
@@ -37,6 +38,7 @@
 		3D217C4B21811D98004C30E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3D217C4D218250EA004C30E2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3D217C4F218251B3004C30E2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3D99B31821928B6600A49280 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3DA6C6EA218E2BAF000792AE /* SocialFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedViewController.swift; sourceTree = "<group>"; };
 		3DA6C6EE218E32C5000792AE /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		64B339A62184F987001044F2 /* BrunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrunchViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		3D217C3821811B21004C30E2 /* anythingsfine */ = {
 			isa = PBXGroup;
 			children = (
+				3D217C3D21811B21004C30E2 /* Main.storyboard */,
 				3D217C3921811B21004C30E2 /* AppDelegate.swift */,
 				3D217C4B21811D98004C30E2 /* LoginViewController.swift */,
 				3D217C4D218250EA004C30E2 /* HomeViewController.swift */,
@@ -89,11 +92,11 @@
 				64B339A62184F987001044F2 /* BrunchViewController.swift */,
 				64B339A82184F9C2001044F2 /* EatOutRecipeViewController.swift */,
 				3DA6C6EA218E2BAF000792AE /* SocialFeedViewController.swift */,
+				3D99B31821928B6600A49280 /* DetailViewController.swift */,
 				D9BD70DC218A4B370028A1E4 /* Post.swift */,
 				3DA6C6EE218E32C5000792AE /* PostCell.swift */,
 				D9861C1C2184097D00014C8F /* Business.swift */,
 				D9861C1D2184097D00014C8F /* YelpClient.swift */,
-				3D217C3D21811B21004C30E2 /* Main.storyboard */,
 				3D217C4021811B24004C30E2 /* Assets.xcassets */,
 				3D217C4221811B24004C30E2 /* LaunchScreen.storyboard */,
 				3D217C4521811B24004C30E2 /* Info.plist */,
@@ -197,6 +200,7 @@
 				"${BUILT_PRODUCTS_DIR}/BDBOAuth1Manager/BDBOAuth1Manager.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -204,6 +208,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDBOAuth1Manager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -235,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D99B31921928B6600A49280 /* DetailViewController.swift in Sources */,
 				D9BD70DB218A45D00028A1E4 /* PostViewController.swift in Sources */,
 				64B339A92184F9C2001044F2 /* EatOutRecipeViewController.swift in Sources */,
 				3D217C4C21811D98004C30E2 /* LoginViewController.swift in Sources */,
