@@ -19,6 +19,9 @@
 		3DA6C6EB218E2BAF000792AE /* SocialFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6C6EA218E2BAF000792AE /* SocialFeedViewController.swift */; };
 		3DA6C6EF218E32C5000792AE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6C6EE218E32C5000792AE /* PostCell.swift */; };
 		6440DD1A21975496003CC063 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6440DD1921975496003CC063 /* Recipe.swift */; };
+		6440DD1C2197572F003CC063 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6440DD1B2197572F003CC063 /* Ingredient.swift */; };
+		6440DD202197575A003CC063 /* EdamamAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6440DD1F2197575A003CC063 /* EdamamAPIManager.swift */; };
+		6440DD22219768FF003CC063 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6440DD21219768FF003CC063 /* RecipeViewController.swift */; };
 		64B339A72184F987001044F2 /* BrunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B339A62184F987001044F2 /* BrunchViewController.swift */; };
 		64B339A92184F9C2001044F2 /* EatOutRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B339A82184F9C2001044F2 /* EatOutRecipeViewController.swift */; };
 		D9861C1E2184097D00014C8F /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9861C1C2184097D00014C8F /* Business.swift */; };
@@ -43,6 +46,9 @@
 		3DA6C6EA218E2BAF000792AE /* SocialFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedViewController.swift; sourceTree = "<group>"; };
 		3DA6C6EE218E32C5000792AE /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		6440DD1921975496003CC063 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		6440DD1B2197572F003CC063 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		6440DD1F2197575A003CC063 /* EdamamAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamAPIManager.swift; sourceTree = "<group>"; };
+		6440DD21219768FF003CC063 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		64B339A62184F987001044F2 /* BrunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrunchViewController.swift; sourceTree = "<group>"; };
 		64B339A82184F9C2001044F2 /* EatOutRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatOutRecipeViewController.swift; sourceTree = "<group>"; };
 		D9861C1C2184097D00014C8F /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				3D217C4221811B24004C30E2 /* LaunchScreen.storyboard */,
 				3D217C4521811B24004C30E2 /* Info.plist */,
 				6440DD1921975496003CC063 /* Recipe.swift */,
+				6440DD1B2197572F003CC063 /* Ingredient.swift */,
+				6440DD1F2197575A003CC063 /* EdamamAPIManager.swift */,
+				6440DD21219768FF003CC063 /* RecipeViewController.swift */,
 			);
 			path = anythingsfine;
 			sourceTree = "<group>";
@@ -245,10 +254,13 @@
 			files = (
 				3D99B31921928B6600A49280 /* DetailViewController.swift in Sources */,
 				D9BD70DB218A45D00028A1E4 /* PostViewController.swift in Sources */,
+				6440DD1C2197572F003CC063 /* Ingredient.swift in Sources */,
 				64B339A92184F9C2001044F2 /* EatOutRecipeViewController.swift in Sources */,
 				3D217C4C21811D98004C30E2 /* LoginViewController.swift in Sources */,
+				6440DD202197575A003CC063 /* EdamamAPIManager.swift in Sources */,
 				3D217C3A21811B21004C30E2 /* AppDelegate.swift in Sources */,
 				64B339A72184F987001044F2 /* BrunchViewController.swift in Sources */,
+				6440DD22219768FF003CC063 /* RecipeViewController.swift in Sources */,
 				3D217C50218251B4004C30E2 /* SignUpViewController.swift in Sources */,
 				D9861C1E2184097D00014C8F /* Business.swift in Sources */,
 				3DA6C6EB218E2BAF000792AE /* SocialFeedViewController.swift in Sources */,

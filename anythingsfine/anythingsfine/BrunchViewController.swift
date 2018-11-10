@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class BrunchViewController: UIViewController {
 
@@ -19,6 +20,14 @@ class BrunchViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOutInBackground { (error: Error?) in
+            NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
+            
+        }
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "breakfastSegue"){
