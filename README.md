@@ -14,9 +14,9 @@ The following **required** functionality is completed:
 - [x] User can sign up to create a new account
 - [x] User can log in and log out of his or her account
 - [x] The current signed in user is persisted across app restarts
-- [ ] User can request a recipe recommendation
+- [x] User can request a recipe recommendation
 - [x] User can request a restaurant recommendation based upon location
-- [ ] User can pick from specific categories for each recommendation
+- [x] User can pick from specific categories for each recommendation
 - [x] User can access the social media page of the app
 - [x] User can take photos while staying in the application
 - [x] User can access photo library to access existing photos on user's phone
@@ -115,6 +115,8 @@ Here's a walkthrough of implemented user stories:
 ![anythingsfine](https://user-images.githubusercontent.com/31720526/48109889-7f67f280-e206-11e8-9568-be0b7a882ccc.gif)
 
 <img src='https://i.imgur.com/RkiWC5I.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://imgur.com/AFQE0RV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
