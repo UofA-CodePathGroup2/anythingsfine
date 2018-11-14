@@ -13,13 +13,14 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var recipeTitle: UILabel!
     @IBOutlet weak var recipeIngredients: UILabel!
     var recipeList: [Recipe] = []
+    var term: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func onRequest(_ sender: Any) {
-        EdamamAPIManager().fetchRecipes { (recipes: [Recipe]?, error: Error?) in
+        EdamamAPIManager().fetchRecipes(term: term) { (recipes: [Recipe]?, error: Error?) in
             if let recipes = recipes {
                 self.recipeList = recipes
                 //print(recipes)
@@ -36,6 +37,7 @@ class RecipeViewController: UIViewController {
                 recipeIngredientString += "\n"
             }
             recipeIngredients.text = recipeIngredientString
+            print("RECIPE printed for " + term)
         }
     }
 }

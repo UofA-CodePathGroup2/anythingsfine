@@ -32,18 +32,28 @@ class BrunchViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "breakfastSegue"){
             print("BREAKFAST")
+            let vc = segue.destination as! EatOutRecipeViewController
+            vc.term = "breakfast"
         }
         if(segue.identifier == "lunchSegue"){
             print("LUNCH")
+            let vc = segue.destination as! EatOutRecipeViewController
+            vc.term = "lunch"
         }
         if(segue.identifier == "dinnerSegue"){
             print("DINNER")
+            let vc = segue.destination as! EatOutRecipeViewController
+            vc.term = "dinner"
         }
         if(segue.identifier == "snackSegue"){
             print("SNACK")
+            let vc = segue.destination as! EatOutRecipeViewController
+            vc.term = "snack"
         }
         if(segue.identifier == "dessertSegue"){
             print("DESSERT")
+            let vc = segue.destination as! EatOutRecipeViewController
+            vc.term = "dessert"
         }
     }
     

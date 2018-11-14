@@ -9,6 +9,7 @@ import UIKit
 
 class EatOutRecipeViewController: UIViewController {
 
+    var term: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,17 +25,11 @@ class EatOutRecipeViewController: UIViewController {
         if(segue.identifier == "eatOutSegue"){
             print("EATOUT")
         }
+        else if(segue.identifier == "recipeSegue"){
+            print("RECIPE for " + term)
+            let vc = segue.destination as! RecipeViewController
+            vc.term = term
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

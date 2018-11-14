@@ -11,7 +11,8 @@ class EdamamAPIManager {
     
     // https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed
     // https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}
-    static let baseUrl = "https://api.edamam.com/search?q=dinner"
+    //static let baseUrl = "https://api.edamam.com/search?q=dinner"
+    static let baseUrl = "https://api.edamam.com/search?q="
     static let app_id = "37062418"
     static let app_key = "f741223ba6b3166228e4ac1efd7e2da7"
     var session: URLSession
@@ -20,8 +21,8 @@ class EdamamAPIManager {
         session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
     }
     
-    func fetchRecipes(completion: @escaping ([Recipe]?, Error?) -> ()) {
-        let url = URL(string: EdamamAPIManager.baseUrl + "&app_id=\(EdamamAPIManager.app_id)&app_key=\(EdamamAPIManager.app_key)")!
+    func fetchRecipes(term: String, completion: @escaping ([Recipe]?, Error?) -> ()) {
+        let url = URL(string: EdamamAPIManager.baseUrl + term + "&app_id=\(EdamamAPIManager.app_id)&app_key=\(EdamamAPIManager.app_key)")!
         //let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         print(url)
         print("\n\n\n")
