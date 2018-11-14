@@ -24,20 +24,21 @@ class RecipeViewController: UIViewController {
             if let recipes = recipes {
                 self.recipeList = recipes
                 //print(recipes)
+                //print(recipeList)
+                if(self.recipeList.count != 0){
+                    let randNum = Int(arc4random_uniform(UInt32(self.recipeList.count)))
+                    let recipe = self.recipeList[randNum]
+                    self.recipeTitle.text = recipe.title
+                    var recipeIngredientString = ""
+                    for ingred in recipe.ingredients! {
+                        recipeIngredientString += ingred
+                        recipeIngredientString += "\n"
+                    }
+                    self.recipeIngredients.text = recipeIngredientString
+                    print("RECIPE printed for " + self.term)
+                }
             }
         }
-        //print(recipeList)
-        if(recipeList.count != 0){
-            let randNum = Int(arc4random_uniform(UInt32(recipeList.count)))
-            let recipe = recipeList[randNum]
-            recipeTitle.text = recipe.title
-            var recipeIngredientString = ""
-            for ingred in recipe.ingredients! {
-                recipeIngredientString += ingred
-                recipeIngredientString += "\n"
-            }
-            recipeIngredients.text = recipeIngredientString
-            print("RECIPE printed for " + term)
-        }
+        
     }
 }
