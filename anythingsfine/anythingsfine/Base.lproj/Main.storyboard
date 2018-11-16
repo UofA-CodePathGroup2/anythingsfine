@@ -242,6 +242,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk2-Sl-YI4">
+                                <rect key="frame" x="235" y="168" width="87" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the caption for the post! Isn't it great?! You should comment down below too! " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5x-Ak-Pdf">
                                 <rect key="frame" x="16" y="257" width="343" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -292,6 +299,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="345-0t-2D8">
+                                <rect key="frame" x="235" y="196" width="124" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iBK-SM-g5b"/>
@@ -303,6 +317,7 @@
                         <outlet property="likeButton" destination="OaD-4p-MdA" id="2tk-OV-HJ9"/>
                         <outlet property="likesLabel" destination="dpz-nO-ZS0" id="3U0-na-tzw"/>
                         <outlet property="postImageView" destination="rpS-KJ-dVh" id="mAe-FR-w5T"/>
+                        <outlet property="restaurantLabel" destination="345-0t-2D8" id="kIO-dJ-bp8"/>
                         <outlet property="tableView" destination="6ab-4y-kZp" id="f6H-Rb-jsm"/>
                         <outlet property="usernameLabel" destination="Y1w-sF-46J" id="MKL-Wm-upJ"/>
                     </connections>
@@ -339,20 +354,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hz3-No-mkh">
-                                <rect key="frame" x="70" y="396" width="234" height="30"/>
+                                <rect key="frame" x="70" y="384" width="234" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-aL-vsl">
+                                <rect key="frame" x="70" y="469" width="234" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvY-zC-QX1">
-                                <rect key="frame" x="172" y="484" width="31" height="30"/>
+                                <rect key="frame" x="169" y="527" width="39" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
                                     <action selector="onPostAF:" destination="YkR-Ap-Mz0" eventType="touchUpInside" id="Hv5-qk-M5E"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gua-ts-Ssk">
+                                <rect key="frame" x="121" y="440" width="132" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NoZ-7R-sUU"/>
@@ -361,6 +391,7 @@
                     <connections>
                         <outlet property="captionTextField" destination="Hz3-No-mkh" id="qUB-HA-9sx"/>
                         <outlet property="imageView" destination="a5p-AT-2do" id="TXu-rB-1WB"/>
+                        <outlet property="restaurantTextField" destination="Roc-aL-vsl" id="Sa6-Ir-ZtU"/>
                         <segue destination="5VL-XX-lnK" kind="presentation" identifier="HomeSegue" id="kwB-fS-Dy1"/>
                     </connections>
                 </viewController>
@@ -612,7 +643,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OkJ-vG-5cV"/>
+        <segue reference="kwB-fS-Dy1"/>
         <segue reference="rqK-Wm-wPz"/>
     </inferredMetricsTieBreakers>
 </document>

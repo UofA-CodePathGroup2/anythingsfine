@@ -30,6 +30,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var restaurantLabel: UILabel!
     var post: Post!
     var commentsArr : [String] = []
     
@@ -44,17 +45,30 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             let currentUser: String = String(PFUser.current()!.username!)
             post.comments.append(currentUser+": "+commentField.text!)
         }
-        post.saveInBackground(block: nil)
-        updateUserInformation()
-        tableView.reloadData()
+        post.saveInBackground { (saved: Bool, error: Error?) in
+            if (saved) {
+                self.updateUserInformation()
+                self.tableView.reloadData()
+            }
+            else {
+                print("Error in commenting on image")
+            }
+        }
+        
         
     }
     
     
     @IBAction func onTapLike(_ sender: Any) {
         post.likesCount += 1
-        post.saveInBackground(block: nil)
-        updateUserInformation()
+        post.saveInBackground { (saved: Bool, error: Error?) in
+            if (saved) {
+                self.updateUserInformation()
+            }
+            else {
+                
+            }
+        }
         likeButton.titleLabel?.text = "Liked"
         
     }
@@ -76,7 +90,9 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
                 username = user.username
             }
             self.usernameLabel.text = username
-            
+            if let restaurantName = post["restaurant"] as? String {
+                restaurantLabel.text = restaurantName
+            }
             if let comments = post["comments"] as? [String] {
                 commentsArr = comments
             }

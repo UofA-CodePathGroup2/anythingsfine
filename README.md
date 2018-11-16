@@ -26,6 +26,8 @@ The following **required** functionality is completed:
 - [x] User can post comments on posts
 
 The following **stretch** features are implemented:
+- [x] User can add restaurant name to a post and see that
+- [ ] App contains loading indicators
 - [ ] User can view other users' profiles
 - [ ] User can request a snack recommendation
 - [ ] Users can rate/review every restaurant
