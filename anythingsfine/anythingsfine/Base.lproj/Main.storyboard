@@ -387,7 +387,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NoZ-7R-sUU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Post" id="9Re-bl-UUO"/>
+                    <tabBarItem key="tabBarItem" title="Post" image="camera" selectedImage="camera" id="9Re-bl-UUO"/>
                     <connections>
                         <outlet property="captionTextField" destination="Hz3-No-mkh" id="qUB-HA-9sx"/>
                         <outlet property="imageView" destination="a5p-AT-2do" id="TXu-rB-1WB"/>
@@ -603,11 +603,11 @@
             </objects>
             <point key="canvasLocation" x="842.39999999999998" y="787.55622188905556"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Recommend-->
         <scene sceneID="6io-yY-L5M">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kKt-Kg-1y7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="dlZ-K5-otv"/>
+                    <tabBarItem key="tabBarItem" title="Recommend" image="idea" id="dlZ-K5-otv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LxU-d9-E2b">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -626,7 +626,7 @@
         <scene sceneID="3QR-2N-mTh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hYr-Ms-CqK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="qac-4L-Y4J" userLabel="asdasd"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="qac-4L-Y4J" userLabel="asdasd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CCd-cg-f2X">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -642,6 +642,11 @@
             <point key="canvasLocation" x="1781.5999999999999" y="787.55622188905556"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="idea" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kwB-fS-Dy1"/>
         <segue reference="rqK-Wm-wPz"/>
