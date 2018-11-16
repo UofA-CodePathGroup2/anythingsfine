@@ -5,7 +5,7 @@ get a recipe, restaurant, snack, or food recommendation.  They can also view the
 Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their
 favorite recipes and take fun photos of their food creations.
 
-Time spent: **10** hours spent in total
+Time spent: **20** hours spent in total
 
 ## User Stories
 
@@ -28,21 +28,15 @@ The following **required** functionality is completed:
 The following **stretch** features are implemented:
 - [x] User can add restaurant name to a post and see that
 - [ ] App contains loading indicators
+- [x] Custom app icon
+- [x] Custon tab bar glyphs
+- [x] User can request a snack recommendation
 - [ ] User can view other users' profiles
-- [ ] User can request a snack recommendation
-- [ ] Users can rate/review every restaurant
 - [ ] User can get directions to restaurants
 - [ ] User can navigate to restaurant website from app
-- [ ] User can make individual reservations from app
-- [ ] User can group together with other users to decide on a recommendation
-- [ ] User can save/access suggestion history
 - [ ] User can create favorite items list
 - [ ] User can send friend requests to other app users
 - [ ] User can accept/decline friend requests from other users
-- [ ] User can see trending items
-- [ ] User can add allergy filters 
-- [ ] User can see additional information such as calories
-- [ ] Link restaurants to post
 
 
 The following **additional** features are implemented:
