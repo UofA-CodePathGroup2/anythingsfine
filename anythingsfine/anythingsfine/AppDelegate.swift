@@ -35,6 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // TODO: Load and show the login view controller
         }
         
+        // Always set the navigation background color when starting app
+        UINavigationBar.appearance().barTintColor = UIColor(red: 27/255, green: 126/255, blue: 0/255, alpha: 1)
+        
         return true
     }
     

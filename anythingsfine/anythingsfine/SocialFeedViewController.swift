@@ -17,6 +17,7 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         let refreshControl = UIRefreshControl()
         
@@ -29,6 +30,10 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControl.Event.valueChanged)
         postsTableView.insertSubview(refreshControl, at: 0)
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
     }
     
@@ -66,6 +71,8 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         let post = postsList[indexPath.row]
         cell.postImageView.file = post["media"] as? PFFile
         cell.postImageView.loadInBackground()
+        cell.postImageView.clipsToBounds = true
+        cell.postImageView.layer.cornerRadius = 10
         cell.captionLabel.text = post["caption"] as? String
         if let likes = post["likesCount"] as? Int {
             cell.likesLabel.text = "Likes: \(likes)"
