@@ -16,6 +16,8 @@ class PostViewController: UIViewController,  UIImagePickerControllerDelegate, UI
     }
     
     @IBOutlet weak var captionTextField: UITextField!
+    
+    @IBOutlet weak var restaurantTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func onSelectPhoto(_ sender: Any) {
@@ -55,10 +57,15 @@ class PostViewController: UIViewController,  UIImagePickerControllerDelegate, UI
         newSize!.height = (newSize?.height)!/1.5
         
         self.imageView.image = resize(image: self.imageView.image!, newSize: newSize!)
-        
-        Post.postUserImage(image: imageView.image!, withCaption: captionTextField.text, withCompletion: nil)
-        
-        performSegue(withIdentifier: "HomeSegue", sender: nil)
+        Post.postUserImage(image: imageView.image!, withCaption: captionTextField.text, restaurant: restaurantTextField.text) { (posted: Bool, error: Error?) in
+            if (posted) {
+                self.performSegue(withIdentifier: "HomeSegue", sender: nil)
+            }
+            else {
+               print("Error in posting")
+                self.performSegue(withIdentifier: "HomeSegue", sender: nil)
+            }
+        }
     }
     
     func resize(image: UIImage, newSize: CGSize) -> UIImage {

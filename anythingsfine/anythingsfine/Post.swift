@@ -13,6 +13,7 @@ class Post: PFObject, PFSubclassing {
     @NSManaged var media : PFFile
     @NSManaged var author: PFUser
     @NSManaged var caption: String
+    @NSManaged var restaurant: String
     @NSManaged var likesCount: Int
     @NSManaged var commentsCount: Int
     @NSManaged var comments: [String]
@@ -33,14 +34,19 @@ class Post: PFObject, PFSubclassing {
      - parameter caption: Caption text input by the user
      - parameter completion: Block to be executed after save operation is complete
      */
-    class func postUserImage(image: UIImage, withCaption caption: String?, withCompletion completion: PFBooleanResultBlock?) {
+    class func postUserImage(image: UIImage, withCaption caption: String?, restaurant: String?, withCompletion completion: PFBooleanResultBlock?) {
         // use subclass approach
         let post = Post()
         
         // Add relevant fields to the object
         post.media = getPFFileFromImage(image: image)! // PFFile column type
         post.author = PFUser.current()! // Pointer column type that points to PFUser
-        post.caption = caption!
+        if let captionText = caption {
+            post.caption = captionText
+        }
+        if let restaurantName = restaurant {
+            post.restaurant = restaurantName
+        }
         post.likesCount = 0
         post.commentsCount = 0
         
