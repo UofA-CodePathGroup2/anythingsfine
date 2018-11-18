@@ -19,6 +19,7 @@ class RecipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.recipeTitle.text = "LOADING"
         
         EdamamAPIManager().fetchRecipes(term: term) { (recipes: [Recipe]?, error: Error?) in
             if let recipes = recipes {
