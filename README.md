@@ -26,6 +26,7 @@ The following **required** functionality is completed:
 - [x] User can post comments on posts
 
 The following **stretch** features are implemented:
+- [x] Updated Feed View Color Scheme
 - [x] User can add restaurant name to a post and see that
 - [x] App contains loading indicators
 - [x] Custom app icon
