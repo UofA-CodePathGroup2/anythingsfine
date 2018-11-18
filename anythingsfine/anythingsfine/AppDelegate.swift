@@ -36,7 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // Always set the navigation background color when starting app
-        UINavigationBar.appearance().barTintColor = UIColor(red: 27/255, green: 126/255, blue: 0/255, alpha: 1)
+        //UINavigationBar.appearance().barTintColor =
+            UIColor(red: 19/255, green: 49/255, blue: 62/255, alpha: 1)
+            
         
         return true
     }

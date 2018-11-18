@@ -192,7 +192,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.19008964702705258" green="0.18582467229741279" blue="0.19053378807106602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="captionLabel" destination="lgB-Cc-o61" id="O71-XJ-UI9"/>
                                             <outlet property="commentsLabel" destination="pKF-LF-ubm" id="95g-kg-1C1"/>
@@ -208,7 +208,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Czq-cF-KHd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="10s-2q-DK2"/>
+                    <navigationItem key="navigationItem" title="Feed" id="10s-2q-DK2" colorLabel="IBBuiltInLabel-Gray"/>
                     <connections>
                         <outlet property="postsTableView" destination="Oy6-g6-T5c" id="mcp-R9-XzF"/>
                     </connections>

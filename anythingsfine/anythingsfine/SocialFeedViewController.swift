@@ -74,6 +74,12 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         cell.postImageView.clipsToBounds = true
         cell.postImageView.layer.cornerRadius = 10
         cell.captionLabel.text = post["caption"] as? String
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.darkGray
+           
+            // UIColor.init(displayP3Red: 95/255, green: 165/255, blue: 249/255, alpha: 1)
+        cell.selectedBackgroundView = bgColorView
+
         if let likes = post["likesCount"] as? Int {
             cell.likesLabel.text = "Likes: \(likes)"
         }
