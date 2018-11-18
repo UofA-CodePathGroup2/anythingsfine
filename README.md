@@ -27,7 +27,7 @@ The following **required** functionality is completed:
 
 The following **stretch** features are implemented:
 - [x] User can add restaurant name to a post and see that
-- [ ] App contains loading indicators
+- [x] App contains loading indicators
 - [x] Custom app icon
 - [x] Custon tab bar glyphs
 - [x] User can request a snack recommendation
@@ -113,6 +113,8 @@ Here's a walkthrough of implemented user stories:
 <img src='https://i.imgur.com/RkiWC5I.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='https://imgur.com/AFQE0RV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://imgur.com/kTnTAuu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
