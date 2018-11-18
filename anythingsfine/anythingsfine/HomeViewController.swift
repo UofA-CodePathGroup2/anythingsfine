@@ -33,9 +33,10 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func onTapRequest(_ sender: Any) {
-        //let randNum = Int.random(in: 0..<categoryList.count)
+        
+        self.recLabel.text = "LOADING"
+        
         let randNum = Int(arc4random_uniform(UInt32(categoryList.count)))
-        //let randNum = categoryList.count - 1
         let searchTerm = categoryList[randNum]
         Business.searchWithTerm(term: searchTerm, completion: { (businesses: [Business]?, error: Error?) -> Void in
             
