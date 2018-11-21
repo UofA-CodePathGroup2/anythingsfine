@@ -19,6 +19,9 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: indexPath)
         cell.textLabel?.text = commentsArr[indexPath.item]
+        cell.backgroundColor = UIColor.darkGray
+        cell.textLabel?.textColor = UIColor.white
+        
         return cell
         
     }
