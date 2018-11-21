@@ -32,6 +32,7 @@ The following **stretch** features are implemented:
 - [x] Custom app icon
 - [x] Custon tab bar glyphs
 - [x] User can request a snack recommendation
+- [x] User can navigate to recipie recommendation website in app
 - [ ] User can view other users' profiles
 - [ ] User can get directions to restaurants
 - [ ] User can navigate to restaurant website from app
