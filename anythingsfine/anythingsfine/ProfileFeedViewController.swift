@@ -1,23 +1,24 @@
 //
-//  SocialFeedViewController.swift
+//  ProfileFeedViewController.swift
 //  anythingsfine
 //
-//  Created by Denny Ho on 11/3/18.
+//  Created by Mely Bohlman on 11/23/18.
 //
 
 import UIKit
 import Parse
 
-class SocialFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ProfileFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    var postsList: [PFObject]! = []
+    var user: PFUser?
+    var usernamePassed: String?
     
     @IBOutlet weak var postsTableView: UITableView!
     
-    
-    var postsList: [PFObject]! = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         let refreshControl = UIRefreshControl()
         
@@ -40,8 +41,11 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
     
     func onTimer(){
         let query = PFQuery(className: "Post")
+        
         query.order(byDescending: "createdAt")
         query.includeKey("author")
+        print("Hello "+usernamePassed!)
+        query.whereKey("authorName", equalTo: usernamePassed)
         //query.includeKey("createdAt")
         query.limit = 20
         
@@ -76,10 +80,10 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         cell.captionLabel.text = post["caption"] as? String
         let bgColorView = UIView()
         bgColorView.backgroundColor = UIColor.darkGray
-           
-            // UIColor.init(displayP3Red: 95/255, green: 165/255, blue: 249/255, alpha: 1)
+        
+        // UIColor.init(displayP3Red: 95/255, green: 165/255, blue: 249/255, alpha: 1)
         cell.selectedBackgroundView = bgColorView
-
+        
         if let likes = post["likesCount"] as? Int {
             cell.likesLabel.text = "Likes: \(likes)"
         }
@@ -92,7 +96,6 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
             username = user.username
         }
         cell.usernameLabel.text = username //post["author"] as? String
-        cell.profileButton.setTitle(username, for: .normal)
         
         return cell
     }
@@ -107,14 +110,6 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
                 
             }
         }
-        else if (segue.identifier == "ProfileSegue") {
-            let cell = sender as! UIButton
-            if let name = cell.title(for: .normal) {
-                let profileViewController = segue.destination as! ProfileFeedViewController
-                profileViewController.usernamePassed = name
-            }
-            
-        }
     }
-    
+
 }

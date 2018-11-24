@@ -18,7 +18,8 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var likesLabel: UILabel!
     @IBOutlet weak var commentsLabel: UILabel!
     
-
+    @IBOutlet weak var profileButton: UIButton!
+    
     
     
     var post: Post!

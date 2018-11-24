@@ -13,6 +13,7 @@ class Post: PFObject, PFSubclassing {
     @NSManaged var media : PFFile
     @NSManaged var author: PFUser
     @NSManaged var caption: String
+    @NSManaged var authorName: String
     @NSManaged var restaurant: String
     @NSManaged var likesCount: Int
     @NSManaged var commentsCount: Int
@@ -41,6 +42,7 @@ class Post: PFObject, PFSubclassing {
         // Add relevant fields to the object
         post.media = getPFFileFromImage(image: image)! // PFFile column type
         post.author = PFUser.current()! // Pointer column type that points to PFUser
+        post.authorName = PFUser.current()!.username!
         if let captionText = caption {
             post.caption = captionText
         }
