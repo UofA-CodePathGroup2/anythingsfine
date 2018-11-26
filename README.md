@@ -34,7 +34,7 @@ The following **stretch** features are implemented:
 - [x] User can request a snack recommendation
 - [x] User can navigate to recipie recommendation website in app
 - [x] User can view other users' profiles
-- [ ] User can get directions to restaurants
+- [x] User can get directions to restaurants
 - [ ] User can navigate to restaurant website from app
 - [ ] User can create favorite items list
 

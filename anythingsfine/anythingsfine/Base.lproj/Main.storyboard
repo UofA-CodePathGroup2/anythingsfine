@@ -193,7 +193,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ie-kv-vH6">
                                                     <rect key="frame" x="252" y="4" width="108" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Profile"/>
+                                                    <state key="normal" title="Profile">
+                                                        <color key="titleColor" red="0.0" green="0.61581165140000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
                                                     <connections>
                                                         <segue destination="fFp-c0-Rbh" kind="show" identifier="ProfileSegue" id="UuU-rr-VuH"/>
                                                     </connections>
@@ -562,6 +564,16 @@
                                 <state key="normal" title="Yelp Request"/>
                                 <connections>
                                     <action selector="onTapRequest:" destination="wsk-Jn-Uec" eventType="touchUpInside" id="DXq-QA-9ui"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOA-Vi-oqg">
+                                <rect key="frame" x="115" y="507" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27450980390000002" green="1" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Open In Maps"/>
+                                <connections>
+                                    <action selector="onTapOpenMaps:" destination="wsk-Jn-Uec" eventType="touchUpInside" id="tNl-QY-UrG"/>
                                 </connections>
                             </button>
                         </subviews>
