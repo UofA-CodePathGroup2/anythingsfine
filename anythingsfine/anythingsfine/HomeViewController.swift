@@ -13,13 +13,19 @@ import MapKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var recLabel: UILabel!
+    @IBOutlet weak var yelpWebButton: UIButton!
+    @IBOutlet weak var mapButton: UIButton!
+    
     var businesses: [Business]!
+    var curBusiness: Business!
     var categoryList: [String] = ["Japanese","Thai","Chinese","Burgers","African","American","Fast Food","French","German","Italian","Mexican","Spanish"]
     var businessAddress: String = ""
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        yelpWebButton.isHidden = true
+        mapButton.isHidden = true
 
     }
 
@@ -89,21 +95,21 @@ class HomeViewController: UIViewController {
                     return;
                 }
                 let randNum2 = businesses.count - 1
-                let business = businesses[randNum2]
-                print(business.name!)
-                print(business.address!)
-                self.recLabel.text = business.name! + "\n" + business.address!
-                self.businessAddress = business.address!
-                
-//                for business in businesses {
-//                    print(business.name!)
-//                    print(business.address!)
-//                }
+                self.curBusiness = businesses[randNum2]
+                print(self.curBusiness.name!)
+                print(self.curBusiness.address!)
+                print(self.curBusiness.yelpUrl)
+                self.recLabel.text = self.curBusiness.name! + "\n" + self.curBusiness.address!
+                self.businessAddress = self.curBusiness.address!
+                self.yelpWebButton.isHidden = false
+                self.mapButton.isHidden = false
             }
-            
-        }
-        )
+        })
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! YelpWebViewController
+        vc.url = curBusiness!.yelpUrl ?? URL(string: "http://google.com")
+        //print("webString is " + curBusiness.yelpUrl!)
+    }
 }

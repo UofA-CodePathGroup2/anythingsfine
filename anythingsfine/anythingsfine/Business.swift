@@ -16,6 +16,7 @@ class Business: NSObject {
     let distance: String?
     let ratingImage: UIImage?
     let reviewCount: NSNumber?
+    let yelpUrl: URL?
     
     init(dictionary: NSDictionary) {
         if dictionary.count == 0 {
@@ -23,6 +24,14 @@ class Business: NSObject {
         }
         
         name = dictionary["name"] as? String
+        
+        let yelpUrlString = dictionary["url"] as? String
+        if !(yelpUrlString?.isEmpty)! {
+            yelpUrl = URL(string: yelpUrlString!)
+        }
+        else{
+            yelpUrl = nil
+        }
         
         let imageURLString = dictionary["image_url"] as? String
         if !(imageURLString?.isEmpty)! {
