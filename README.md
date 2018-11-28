@@ -33,24 +33,17 @@ The following **stretch** features are implemented:
 - [x] Custon tab bar glyphs
 - [x] User can request a snack recommendation
 - [x] User can navigate to recipie recommendation website in app
-- [x] User can view other users' profiles
+- [x] User can view other users' profiles & posts
 - [x] User can get directions to restaurants
-- [ ] User can navigate to restaurant website from app
-- [ ] User can create favorite items list
-
-The following **additional** features are implemented:
-
-
-
+- [x] User can navigate to restaurant yelp page from app
 
 
 ## APIs
-Recipie API: Since we want this app to fetch random recipies, we need an API to retrieve said recipies.
-For this, we are thinking of using either the [Food API at Spoonacular](https://spoonacular.com/food-api) or the [Edamam API](https://developer.edamam.com/)
+Recipie API: To retrieve recipies, we used the [Edamam API](https://developer.edamam.com/).
 
-Search API: To retrieve restuarants in the area, we're going to need to use a eating location search tool. The most well known API is the [Yelp API](https://www.yelp.com/developers), so we've elected to use that.
+Search API: To retrieve restuarants in the area, we used the [Yelp API](https://www.yelp.com/developers).
 
-Parse: WIll be backbone to social media aspect of this project. Will hold the post component as well as the account profile components.
+Parse: Used as the backbone to social media aspect of this project. Holds post objects and can "like" and "comment" posts.
 
 
 ## Parse Components
