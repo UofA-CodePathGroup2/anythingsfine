@@ -37,11 +37,6 @@ The following **stretch** features are implemented:
 - [x] User can get directions to restaurants
 - [x] User can navigate to restaurant yelp page from app
 
-The following **additional** features are implemented:
-
-
-
-
 
 ## APIs
 Recipie API: To retrieve recipies, we used the [Edamam API](https://developer.edamam.com/).
