@@ -52,6 +52,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             if (saved) {
                 self.updateUserInformation()
                 self.tableView.reloadData()
+                self.commentField.text = ""
             }
             else {
                 print("Error in commenting on image")

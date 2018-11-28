@@ -91,8 +91,12 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
             print(user.username)
             username = user.username
         }
-        //cell.usernameLabel.text = username //post["author"] as? String
+        //1 = username //post["author"] as? String
         cell.profileButton.setTitle(username, for: .normal)
+        cell.profileButton.backgroundColor = .clear
+        cell.profileButton.layer.cornerRadius = 5
+        cell.profileButton.layer.borderWidth = 2
+        cell.profileButton.layer.borderColor = UIColor.white.cgColor
         
         return cell
     }
