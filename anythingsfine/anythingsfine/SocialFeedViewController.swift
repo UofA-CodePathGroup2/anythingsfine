@@ -91,7 +91,7 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
             print(user.username)
             username = user.username
         }
-        cell.usernameLabel.text = username //post["author"] as? String
+        //cell.usernameLabel.text = username //post["author"] as? String
         cell.profileButton.setTitle(username, for: .normal)
         
         return cell
