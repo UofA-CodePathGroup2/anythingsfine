@@ -100,6 +100,8 @@ Here's a wireframe rendering of planned user stories:
 
 Here's a walkthrough of implemented user stories:
 
+![anythingsfine](https://user-images.githubusercontent.com/31720526/49336825-847e4e80-f5c6-11e8-9a05-fd3a307b3c55.gif)
+
 ![anythingsfine](https://user-images.githubusercontent.com/31720526/48109889-7f67f280-e206-11e8-9568-be0b7a882ccc.gif)
 
 <img src='https://i.imgur.com/RkiWC5I.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
