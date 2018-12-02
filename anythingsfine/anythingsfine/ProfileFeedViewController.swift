@@ -89,10 +89,10 @@ class ProfileFeedViewController: UIViewController, UITableViewDataSource, UITabl
         cell.selectedBackgroundView = bgColorView
         
         if let likes = post["likesCount"] as? Int {
-            cell.likesLabel.text = "Likes: \(likes)"
+            cell.likesLabel.text = "\(likes)"
         }
         if let comments = post["commentsCount"] as? Int {
-            cell.commentsLabel.text = "Comments: \(comments)"
+            cell.commentsLabel.text = "\(comments)"
         }
         var username : String?
         if let user = post["author"] as? PFUser {

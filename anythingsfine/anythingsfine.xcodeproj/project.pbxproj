@@ -96,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3D217C3D21811B21004C30E2 /* Main.storyboard */,
+				3D217C4221811B24004C30E2 /* LaunchScreen.storyboard */,
 				3D217C3921811B21004C30E2 /* AppDelegate.swift */,
 				3D217C4B21811D98004C30E2 /* LoginViewController.swift */,
 				3D217C4D218250EA004C30E2 /* HomeViewController.swift */,
@@ -111,7 +112,6 @@
 				D9861C1C2184097D00014C8F /* Business.swift */,
 				D9861C1D2184097D00014C8F /* YelpClient.swift */,
 				3D217C4021811B24004C30E2 /* Assets.xcassets */,
-				3D217C4221811B24004C30E2 /* LaunchScreen.storyboard */,
 				3D217C4521811B24004C30E2 /* Info.plist */,
 				6440DD1921975496003CC063 /* Recipe.swift */,
 				6440DD1F2197575A003CC063 /* EdamamAPIManager.swift */,

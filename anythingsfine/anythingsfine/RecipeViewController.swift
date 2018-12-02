@@ -19,7 +19,7 @@ class RecipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.recipeTitle.text = "LOADING"
+        self.recipeTitle.text = "Loading..."
         
         EdamamAPIManager().fetchRecipes(term: term) { (recipes: [Recipe]?, error: Error?) in
             if let recipes = recipes {
@@ -33,6 +33,8 @@ class RecipeViewController: UIViewController {
                     self.recipeTitle.text = self.recipe.title
                     let picString = self.recipe.picString
                     self.foodPic.setImageWith(URL(string: picString!)!)
+                    self.foodPic.clipsToBounds = true
+                    self.foodPic.layer.cornerRadius = 10
                     print("RECIPE printed for " + self.term)
                     
                 }

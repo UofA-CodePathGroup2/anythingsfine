@@ -83,10 +83,10 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             self.postImageView.loadInBackground()
             self.captionLabel.text = post["caption"] as? String
             if let likes = post["likesCount"] as? Int {
-                self.likesLabel.text = "Likes: \(likes)"
+                self.likesLabel.text = "\(likes)"
             }
             if let comments = post["commentsCount"] as? Int {
-                self.commentsLabel.text = "Comments: \(comments)"
+                self.commentsLabel.text = "\(comments)"
             }
             var username : String?
             if let user = post["author"] as? PFUser {

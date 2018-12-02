@@ -24,7 +24,7 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         
         postsTableView.delegate = self
         postsTableView.dataSource = self
-        postsTableView.rowHeight = 300
+        postsTableView.rowHeight = 320
         
         self.onTimer()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControl.Event.valueChanged)
@@ -81,10 +81,13 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         cell.selectedBackgroundView = bgColorView
 
         if let likes = post["likesCount"] as? Int {
-            cell.likesLabel.text = "Likes: \(likes)"
+            //cell.likesLabel.text = "Likes: \(likes)"
+            cell.likesLabel.text = "\(likes)"
+            
         }
         if let comments = post["commentsCount"] as? Int {
-            cell.commentsLabel.text = "Comments: \(comments)"
+            //cell.commentsLabel.text = "Comments: \(comments)"
+            cell.commentsLabel.text = "\(comments)"
         }
         var username : String?
         if let user = post["author"] as? PFUser {
