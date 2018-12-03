@@ -98,7 +98,7 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         cell.profileButton.setTitle(username, for: .normal)
         cell.profileButton.backgroundColor = .clear
         cell.profileButton.layer.cornerRadius = 5
-        cell.profileButton.layer.borderWidth = 2
+        //cell.profileButton.layer.borderWidth = 0.5
         cell.profileButton.layer.borderColor = UIColor.white.cgColor
         
         return cell

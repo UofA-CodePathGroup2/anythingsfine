@@ -11,7 +11,7 @@ class PostViewController: UIViewController,  UIImagePickerControllerDelegate, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.imageView.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     

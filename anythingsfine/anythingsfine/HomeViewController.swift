@@ -81,7 +81,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func onTapRequest(_ sender: Any) {
         
-        self.recLabel.text = "LOADING"
+        self.recLabel.text = "Loading..."
         
         let randNum = Int(arc4random_uniform(UInt32(categoryList.count)))
         let searchTerm = categoryList[randNum]
