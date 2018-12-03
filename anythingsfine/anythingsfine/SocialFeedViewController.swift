@@ -26,6 +26,10 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         postsTableView.dataSource = self
         postsTableView.rowHeight = 320
         
+       let yourColor = UIColor.darkGray
+        self.postsTableView.backgroundColor = yourColor ;
+        self.postsTableView.backgroundView?.backgroundColor = yourColor ;
+        
         self.onTimer()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControl.Event.valueChanged)
         postsTableView.insertSubview(refreshControl, at: 0)

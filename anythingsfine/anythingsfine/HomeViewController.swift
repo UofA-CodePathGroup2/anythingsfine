@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         yelpWebButton.isHidden = true
         mapButton.isHidden = true
+        onTapRequest((Any).self)
 
     }
 

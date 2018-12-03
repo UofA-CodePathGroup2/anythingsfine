@@ -23,7 +23,7 @@ class ProfileFeedViewController: UIViewController, UITableViewDataSource, UITabl
         let refreshControl = UIRefreshControl()
         
         var yourColor = UIColor.init(displayP3Red: 48/255, green: 47/255, blue: 49/255, alpha: 1)
-        //yourColor = UIColor.darkGray
+        yourColor = UIColor.darkGray
         
         postsTableView.delegate = self
         postsTableView.dataSource = self
