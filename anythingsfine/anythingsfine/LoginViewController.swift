@@ -32,6 +32,10 @@ class LoginViewController: UIViewController {
                 print("you're logged in!")
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
+            else
+            {
+                print("ERROR")
+            }
         }
     }
     

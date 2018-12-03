@@ -55,7 +55,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEz-9J-ido"/>
-                                    <segue destination="5VL-XX-lnK" kind="presentation" identifier="loginSegue" id="OkJ-vG-5cV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,6 +64,7 @@
                     <connections>
                         <outlet property="passwordField" destination="SbN-oH-b0B" id="hgv-S1-yMy"/>
                         <outlet property="usernameField" destination="957-8K-3vX" id="fBz-o0-VHB"/>
+                        <segue destination="5VL-XX-lnK" kind="presentation" identifier="loginSegue" id="QdY-7k-dl8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -792,6 +792,7 @@
             <objects>
                 <tabBarController storyboardIdentifier="MainViewController" title="MainViewController" automaticallyAdjustsScrollViewInsets="NO" id="5VL-XX-lnK" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="3wW-xK-yMa"/>
                     <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uKh-Ax-jKt">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -953,7 +954,7 @@
         <image name="idea" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kwB-fS-Dy1"/>
+        <segue reference="QdY-7k-dl8"/>
         <segue reference="rqK-Wm-wPz"/>
     </inferredMetricsTieBreakers>
 </document>
