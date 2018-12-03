@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -337,6 +337,7 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iBK-SM-g5b"/>
                     </view>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="captionLabel" destination="R5x-Ak-Pdf" id="EPG-nu-DMg"/>
                         <outlet property="commentField" destination="7ah-BW-SSp" id="w71-e6-bUe"/>
@@ -352,6 +353,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnp-Vb-zgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3504.8000000000002" y="787.55622188905556"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BeH-em-ecY">
+            <objects>
+                <viewController id="B3k-9q-g1D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wrU-eA-gZm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWf-cN-enM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wx6-mi-vwn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="pMQ-4i-q4Y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wx6-mi-vwn" secondAttribute="trailing" id="O7S-kC-Trj"/>
+                                    <constraint firstItem="wx6-mi-vwn" firstAttribute="leading" secondItem="YWf-cN-enM" secondAttribute="leading" id="Qcb-Zk-GGt"/>
+                                    <constraint firstItem="wx6-mi-vwn" firstAttribute="top" secondItem="YWf-cN-enM" secondAttribute="top" id="Zhl-4V-rAN"/>
+                                    <constraint firstAttribute="bottom" secondItem="wx6-mi-vwn" secondAttribute="bottom" id="a7A-2u-FER"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t2j-f7-wqb" firstAttribute="trailing" secondItem="YWf-cN-enM" secondAttribute="trailing" id="1RI-wi-3oB"/>
+                            <constraint firstItem="wx6-mi-vwn" firstAttribute="height" secondItem="wrU-eA-gZm" secondAttribute="height" id="BrD-at-akP"/>
+                            <constraint firstItem="YWf-cN-enM" firstAttribute="leading" secondItem="t2j-f7-wqb" secondAttribute="leading" id="Nap-RM-CJw"/>
+                            <constraint firstItem="wx6-mi-vwn" firstAttribute="width" secondItem="wrU-eA-gZm" secondAttribute="width" id="VKK-Xw-xy5"/>
+                            <constraint firstItem="t2j-f7-wqb" firstAttribute="bottom" secondItem="YWf-cN-enM" secondAttribute="bottom" id="mbi-ve-fDe"/>
+                            <constraint firstItem="YWf-cN-enM" firstAttribute="top" secondItem="t2j-f7-wqb" secondAttribute="top" id="vsa-Ud-4W7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t2j-f7-wqb"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOf-Ux-uNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4302" y="665"/>
         </scene>
         <!--Post-->
         <scene sceneID="zQm-5Z-mwk">
@@ -936,21 +981,21 @@
     <resources>
         <image name="camera" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
-        <image name="icons8-company-filled-500" width="375" height="375"/>
-        <image name="icons8-forward-arrow-90" width="67.5" height="67.5"/>
-        <image name="icons8-frying-pan-filled-100" width="75" height="75"/>
-        <image name="icons8-hamburger-96-3" width="72" height="72"/>
-        <image name="icons8-heart-outline-filled-500" width="375" height="375"/>
-        <image name="icons8-ice-cream-cone-filled-100-2" width="75" height="75"/>
-        <image name="icons8-pancake-filled-500" width="375" height="375"/>
-        <image name="icons8-potato-chips-filled-500-3" width="375" height="375"/>
-        <image name="icons8-restaurant-table-filled-500" width="375" height="375"/>
-        <image name="icons8-rules-filled-500" width="375" height="375"/>
-        <image name="icons8-tableware-filled-100" width="75" height="75"/>
-        <image name="icons8-thanksgiving-96" width="72" height="72"/>
-        <image name="icons8-topic-30" width="22.5" height="22.5"/>
-        <image name="icons8-topic-90" width="67.5" height="67.5"/>
-        <image name="icons8-visit-filled-500" width="375" height="375"/>
+        <image name="icons8-company-filled-500" width="500" height="500"/>
+        <image name="icons8-forward-arrow-90" width="90" height="90"/>
+        <image name="icons8-frying-pan-filled-100" width="100" height="100"/>
+        <image name="icons8-hamburger-96-3" width="96" height="96"/>
+        <image name="icons8-heart-outline-filled-500" width="500" height="500"/>
+        <image name="icons8-ice-cream-cone-filled-100-2" width="100" height="100"/>
+        <image name="icons8-pancake-filled-500" width="500" height="500"/>
+        <image name="icons8-potato-chips-filled-500-3" width="500" height="500"/>
+        <image name="icons8-restaurant-table-filled-500" width="500" height="500"/>
+        <image name="icons8-rules-filled-500" width="500" height="500"/>
+        <image name="icons8-tableware-filled-100" width="100" height="100"/>
+        <image name="icons8-thanksgiving-96" width="96" height="96"/>
+        <image name="icons8-topic-30" width="30" height="30"/>
+        <image name="icons8-topic-90" width="90" height="90"/>
+        <image name="icons8-visit-filled-500" width="500" height="500"/>
         <image name="idea" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>

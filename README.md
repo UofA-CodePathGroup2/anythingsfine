@@ -88,13 +88,6 @@ Parse: Used as the backbone to social media aspect of this project. Holds post o
 - Meal ingredients
 - Meal instructions
 
-
-## Wireframe
-
-Here's a wireframe rendering of planned user stories:
-
-<img src='https://imgur.com/SVZ1VPG.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
 ## Demo Video Link
 
 https://www.youtube.com/watch?v=-rU_RD-XD_o
