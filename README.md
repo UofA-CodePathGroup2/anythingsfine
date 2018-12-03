@@ -5,41 +5,40 @@ get a recipe, restaurant, snack, or food recommendation.  They can also view the
 Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their
 favorite recipes and take fun photos of their food creations.
 
-Time spent: **20** hours spent in total
+## Features
 
-## User Stories
+Base Functionality:
 
-The following **required** functionality is completed:
+- User can sign up to create a new account
+- User can log in and log out of his or her account
+- The current signed in user is persisted across app restarts
+- User can request a recipe recommendation
+- User can request a restaurant recommendation based upon location
+- User can pick from specific categories for each recommendation
+- User can access the social media page
+- User can take photos in the application
+- User can access their photo library
+- User can create and share an "Anything's Fine" post that includes a photo, caption, and/or restaurant name
+- User can view a TableView of their friend's posts
+- User can like posts
+- User can post comments on posts
 
-- [x] User can sign up to create a new account
-- [x] User can log in and log out of his or her account
-- [x] The current signed in user is persisted across app restarts
-- [x] User can request a recipe recommendation
-- [x] User can request a restaurant recommendation based upon location
-- [x] User can pick from specific categories for each recommendation
-- [x] User can access the social media page of the app
-- [x] User can take photos while staying in the application
-- [x] User can access photo library to access existing photos on user's phone
-- [x] User can post an "Anything's Fine" post which has a photo and caption
-- [x] User can see table view arrangement of posts from all friends and self with most recent posts on top
-- [x] User can like posts
-- [x] User can post comments on posts
+Additional Features:
 
-The following **stretch** features are implemented:
-- [x] Updated Feed View Color Scheme
-- [x] User can add restaurant name to a post and see that
-- [x] App contains loading indicators
-- [x] Custom app icon
-- [x] Custon tab bar glyphs
-- [x] User can request a snack recommendation
-- [x] User can navigate to recipie recommendation website in app
-- [x] User can view other users' profiles & posts
-- [x] User can get directions to restaurants
-- [x] User can navigate to restaurant yelp page from app
+- Updated Feed View Color Scheme
+- User can add restaurant name to a post and see that
+- App contains loading indicators
+- Custom app icon
+- Custon tab bar glyphs
+- User can request a snack recommendation
+- User can navigate to recipie recommendation website in app
+- User can view other users' profile & posts
+- User can get directions to restaurant
+- User can navigate to restaurant yelp page
 
 
 ## APIs
-Recipie API: To retrieve recipies, we used the [Edamam API](https://developer.edamam.com/).
+Recipe API: To retrieve recipies, we used the [Edamam API](https://developer.edamam.com/).
 
 Search API: To retrieve restuarants in the area, we used the [Yelp API](https://www.yelp.com/developers).
 
@@ -79,7 +78,7 @@ Parse: Used as the backbone to social media aspect of this project. Holds post o
 - Likes
 - Comments
 
-### Recipie
+### Recipe
 - Meal time (Breakfast, lunch, dinner)
 - Meal type (eat out, eat in)
 - Meal name
@@ -98,16 +97,6 @@ https://www.youtube.com/watch?v=-rU_RD-XD_o
 Here's a walkthrough of implemented user stories:
 
 ![anythingsfine](https://user-images.githubusercontent.com/31720526/49336825-847e4e80-f5c6-11e8-9a05-fd3a307b3c55.gif)
-
-![anythingsfine](https://user-images.githubusercontent.com/31720526/48109889-7f67f280-e206-11e8-9568-be0b7a882ccc.gif)
-
-<img src='https://i.imgur.com/RkiWC5I.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<img src='https://imgur.com/AFQE0RV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<img src='https://imgur.com/kTnTAuu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 
 ## Credits
