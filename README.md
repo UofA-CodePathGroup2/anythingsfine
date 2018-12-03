@@ -1,4 +1,4 @@
-# Group Project - Anything's Fine
+# Anything's Fine
 
 Anything's Fine is a recommendation and social media app for food.  People often do not know what to eat, so they can use this app to
 get a recipe, restaurant, snack, or food recommendation.  They can also view the social media page of the app to see what their friends are eating.
