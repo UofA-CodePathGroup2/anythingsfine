@@ -1,14 +1,11 @@
 # Anything's Fine
 
-Anything's Fine is a recommendation and social media app for food.  People often do not know what to eat, so they can use this app to
-get a recipe, restaurant, snack, or food recommendation.  They can also view the social media page of the app to see what their friends are eating.
-Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their
-favorite recipes and take fun photos of their food creations.
+Anything's Fine is a recommendation and social media app for food.  People often do not know what to eat, so they can use this app to get a recipe, restaurant, snack, or food recommendation.  They can also view the social media page of the app to see what their friends are eating.
+Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their favorite recipes and take fun photos of their food creations.
 
 ## Features
 
 Base Functionality:
-
 - User can sign up to create a new account
 - User can log in and log out of his or her account
 - The current signed in user is persisted across app restarts
@@ -24,7 +21,6 @@ Base Functionality:
 - User can post comments on posts
 
 Additional Features:
-
 - Updated Feed View Color Scheme
 - User can add restaurant name to a post and see that
 - App contains loading indicators
@@ -36,14 +32,12 @@ Additional Features:
 - User can get directions to restaurant
 - User can navigate to restaurant yelp page
 
-
 ## APIs
 Recipe API: To retrieve recipies, we used the [Edamam API](https://developer.edamam.com/).
 
 Search API: To retrieve restuarants in the area, we used the [Yelp API](https://www.yelp.com/developers).
 
 Parse: Used as the backbone to social media aspect of this project. Holds post objects and can "like" and "comment" posts.
-
 
 ## Parse Components
 
@@ -52,8 +46,6 @@ Parse: Used as the backbone to social media aspect of this project. Holds post o
 - Username
 - Password
 - Full name
-- Location
-- Friends (Optional)
 
 ### Post Feed
 - Image
@@ -62,7 +54,6 @@ Parse: Used as the backbone to social media aspect of this project. Holds post o
 - Caption
 - Likes
 - Comments
-
 
 ## Model Classes
 
@@ -91,24 +82,22 @@ Parse: Used as the backbone to social media aspect of this project. Holds post o
 
 https://www.youtube.com/watch?v=-rU_RD-XD_o
 
-
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
 ![anythingsfine](https://user-images.githubusercontent.com/31720526/49336825-847e4e80-f5c6-11e8-9a05-fd3a307b3c55.gif)
 
-
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
-
+- Parse - back-end library
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The hardest part of building this app was getting the concept translated from the idea to the execution. In addition, selecting the correct APIs to use and harnessing their capabilities proved to be difficult in making this app.
 
 ## License
 
