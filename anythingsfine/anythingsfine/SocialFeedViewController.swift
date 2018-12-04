@@ -23,8 +23,9 @@ class SocialFeedViewController: UIViewController, UITableViewDataSource, UITable
         
         
         postsTableView.delegate = self
-        postsTableView.dataSource = self
-        postsTableView.rowHeight = 320
+        postsTableView.dataSource = self        
+        postsTableView.estimatedRowHeight = 320
+        postsTableView.rowHeight = UITableView.automaticDimension
         
        let yourColor = UIColor.darkGray
         self.postsTableView.backgroundColor = yourColor ;
