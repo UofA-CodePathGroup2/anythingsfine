@@ -82,18 +82,10 @@ Parse: Used as the backbone to social media aspect of this project. Holds post o
 
 https://www.youtube.com/watch?v=-rU_RD-XD_o
 
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-![anythingsfine](https://user-images.githubusercontent.com/31720526/49336825-847e4e80-f5c6-11e8-9a05-fd3a307b3c55.gif)
-
 ## Credits
 
-List an 3rd party libraries, icons, graphics, or other assets you used in your app.
-
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
-- Parse - back-end library
+- [Parse](https://devcenter.heroku.com/articles/deploying-a-parse-server-to-heroku) - back-end library
 
 ## Notes
 
