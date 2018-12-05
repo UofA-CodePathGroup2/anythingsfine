@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -482,7 +482,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a5p-AT-2do">
-                                <rect key="frame" x="8" y="62" width="343" height="195"/>
+                                <rect key="frame" x="16" y="62" width="343" height="195"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="195" id="1eS-SH-0Bd"/>
@@ -548,7 +548,6 @@
                             <constraint firstItem="Roc-aL-vsl" firstAttribute="top" secondItem="gua-ts-Ssk" secondAttribute="bottom" constant="8" id="Hjf-Uw-ex0"/>
                             <constraint firstItem="Hz3-No-mkh" firstAttribute="leading" secondItem="NoZ-7R-sUU" secondAttribute="leading" constant="8" id="Hk5-zo-4a0"/>
                             <constraint firstItem="Roc-aL-vsl" firstAttribute="leading" secondItem="NoZ-7R-sUU" secondAttribute="leading" constant="8" id="Qtf-xP-kus"/>
-                            <constraint firstItem="a5p-AT-2do" firstAttribute="leading" secondItem="NoZ-7R-sUU" secondAttribute="leading" constant="8" id="TxZ-oi-Vbj"/>
                             <constraint firstItem="Xfy-Ku-lAO" firstAttribute="centerX" secondItem="vbH-cU-FZw" secondAttribute="centerX" id="XtU-l1-DdZ"/>
                             <constraint firstItem="a5p-AT-2do" firstAttribute="top" secondItem="jvY-zC-QX1" secondAttribute="bottom" constant="8" id="ZPD-4i-p6S"/>
                             <constraint firstItem="NoZ-7R-sUU" firstAttribute="trailing" secondItem="Roc-aL-vsl" secondAttribute="trailing" constant="8" id="Zqc-f8-uN8"/>
@@ -556,6 +555,7 @@
                             <constraint firstItem="gua-ts-Ssk" firstAttribute="top" secondItem="Hz3-No-mkh" secondAttribute="bottom" constant="8" id="bW9-73-IdB"/>
                             <constraint firstItem="jvY-zC-QX1" firstAttribute="top" secondItem="NoZ-7R-sUU" secondAttribute="top" constant="9" id="c8T-b3-DlI"/>
                             <constraint firstItem="Xfy-Ku-lAO" firstAttribute="top" secondItem="a5p-AT-2do" secondAttribute="bottom" constant="8" id="cyg-DA-DWO"/>
+                            <constraint firstItem="a5p-AT-2do" firstAttribute="centerX" secondItem="vbH-cU-FZw" secondAttribute="centerX" id="dwz-JJ-TZ5"/>
                             <constraint firstItem="Z8Z-xq-duY" firstAttribute="leading" secondItem="NoZ-7R-sUU" secondAttribute="leading" constant="8" id="ePJ-He-bA9"/>
                             <constraint firstItem="lSy-P7-aoe" firstAttribute="top" secondItem="NoZ-7R-sUU" secondAttribute="top" constant="8" id="gNy-bM-fpd"/>
                             <constraint firstItem="a5p-AT-2do" firstAttribute="top" secondItem="lSy-P7-aoe" secondAttribute="bottom" constant="8" id="o7U-GA-iId"/>
@@ -1078,21 +1078,21 @@
     <resources>
         <image name="camera" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
-        <image name="icons8-company-filled-500" width="500" height="500"/>
-        <image name="icons8-forward-arrow-90" width="90" height="90"/>
-        <image name="icons8-frying-pan-filled-100" width="100" height="100"/>
-        <image name="icons8-hamburger-96-3" width="96" height="96"/>
-        <image name="icons8-heart-outline-filled-500" width="500" height="500"/>
-        <image name="icons8-ice-cream-cone-filled-100-2" width="100" height="100"/>
-        <image name="icons8-pancake-filled-500" width="500" height="500"/>
-        <image name="icons8-potato-chips-filled-500-3" width="500" height="500"/>
-        <image name="icons8-restaurant-table-filled-500" width="500" height="500"/>
-        <image name="icons8-rules-filled-500" width="500" height="500"/>
-        <image name="icons8-tableware-filled-100" width="100" height="100"/>
-        <image name="icons8-thanksgiving-96" width="96" height="96"/>
-        <image name="icons8-topic-30" width="30" height="30"/>
-        <image name="icons8-topic-90" width="90" height="90"/>
-        <image name="icons8-visit-filled-500" width="500" height="500"/>
+        <image name="icons8-company-filled-500" width="375" height="375"/>
+        <image name="icons8-forward-arrow-90" width="67.5" height="67.5"/>
+        <image name="icons8-frying-pan-filled-100" width="75" height="75"/>
+        <image name="icons8-hamburger-96-3" width="72" height="72"/>
+        <image name="icons8-heart-outline-filled-500" width="375" height="375"/>
+        <image name="icons8-ice-cream-cone-filled-100-2" width="75" height="75"/>
+        <image name="icons8-pancake-filled-500" width="375" height="375"/>
+        <image name="icons8-potato-chips-filled-500-3" width="375" height="375"/>
+        <image name="icons8-restaurant-table-filled-500" width="375" height="375"/>
+        <image name="icons8-rules-filled-500" width="375" height="375"/>
+        <image name="icons8-tableware-filled-100" width="75" height="75"/>
+        <image name="icons8-thanksgiving-96" width="72" height="72"/>
+        <image name="icons8-topic-30" width="22.5" height="22.5"/>
+        <image name="icons8-topic-90" width="67.5" height="67.5"/>
+        <image name="icons8-visit-filled-500" width="375" height="375"/>
         <image name="idea" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
