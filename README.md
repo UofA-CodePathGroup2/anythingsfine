@@ -6,31 +6,31 @@ Everyone has to eat so there is sure to be plenty of opportunity to use Anything
 ## Features
 
 Base Functionality:
-- User can sign up to create a new account
-- User can log in and log out of his or her account
-- The current signed in user is persisted across app restarts
-- User can request a recipe recommendation
-- User can request a restaurant recommendation based upon location
-- User can pick from specific categories for each recommendation
-- User can access the social media page
-- User can take photos in the application
-- User can access their photo library
-- User can create and share an "Anything's Fine" post that includes a photo, caption, and/or restaurant name
-- User can view a TableView of their friend's posts
-- User can like posts
-- User can post comments on posts
+- Sign up to create a new account
+- Log in and log out of account
+- Current signed in user is persisted across app restarts
+- Recipe recommendation
+- Restaurant recommendation based upon location
+- Specific categories for each recommendation
+- Social media page
+- Take photos within the application
+- Access photo library
+- Create and share an "Anything's Fine" post that includes a photo, caption, and/or restaurant name
+- View TableView of friend's posts
+- Like posts
+- Post comments 
 
 Additional Features:
 - Updated Feed View Color Scheme
-- User can add restaurant name to a post and see that
+- Add restaurant name to a post
 - App contains loading indicators
 - Custom app icon
 - Custon tab bar glyphs
-- User can request a snack recommendation
-- User can navigate to recipie recommendation website in app
-- User can view other users' profile & posts
-- User can get directions to restaurant
-- User can navigate to restaurant yelp page
+- Snack recommendation requests
+- Navigate to recipe recommendation website in app
+- View other users' profile & posts
+- Get directions to restaurant
+- Navigate to restaurant yelp page
 
 ## APIs
 Recipe API: To retrieve recipies, we used the [Edamam API](https://developer.edamam.com/).
