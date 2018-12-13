@@ -32,6 +32,14 @@ Additional Features:
 - Get directions to restaurant
 - Navigate to restaurant yelp page
 
+## Video Walkthrough
+
+
+
+## Demo Video Link
+
+https://www.youtube.com/watch?v=-rU_RD-XD_o
+
 ## APIs
 Recipe API: To retrieve recipies, we used the [Edamam API](https://developer.edamam.com/).
 
@@ -77,10 +85,6 @@ Parse: Used as the backbone to social media aspect of this project. Holds post o
 - Meal summary
 - Meal ingredients
 - Meal instructions
-
-## Demo Video Link
-
-https://www.youtube.com/watch?v=-rU_RD-XD_o
 
 ## Credits
 
