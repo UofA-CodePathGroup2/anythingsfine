@@ -34,7 +34,7 @@ Additional Features:
 
 ## Video Walkthrough
 
-
+![anythingsfine](https://user-images.githubusercontent.com/31720526/49912660-19dfd500-fe48-11e8-852e-42c559647693.gif)
 
 ## Demo Video Link
 
