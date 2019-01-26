@@ -1,7 +1,10 @@
 # Anything's Fine
 
-Anything's Fine is a recommendation and social media app for food.  People often do not know what to eat, so they can use this app to get a recipe, restaurant, snack, or food recommendation.  They can also view the social media page of the app to see what their friends are eating.
-Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share their favorite recipes and take fun photos of their food creations.
+Person: What would you like to eat?  
+Me: "Anything's Fine!"
+
+Anything's Fine is a recommendation and social media app for food.  People often do not know what to eat, so they can use this app to get a recipe, restaurant, snack, or food recommendation.  They can also view the social media page of the app to see what their friends are eating and make their own recommendations.
+Everyone has to eat so there is sure to be plenty of opportunity to use Anything's Fine.  Creativity can be expressed as users can share/reccomend their favorite recipes and take fun photos of their food creations.
 
 ## Features
 
